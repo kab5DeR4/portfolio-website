@@ -38,7 +38,7 @@ export default function SkillsSection() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {skillCategories.map((category, index) => (
-          <div key={index} className={`glass-card hover-glass p-8 rounded-2xl reveal-up active border-t-2 ${category.borderColor}`}>
+          <div key={index} className={`glass-card hover-glass p-8 rounded-2xl border-t-2 ${category.borderColor}`}>
             <div className="flex items-center gap-4 mb-6">
               <span className={`text-3xl bg-slate-800/80 border border-slate-700 w-14 h-14 flex items-center justify-center rounded-xl ${category.color}`}>
                 {category.icon}

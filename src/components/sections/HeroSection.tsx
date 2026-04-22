@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function HeroSection() {
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center section-padding pt-32">
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-5xl gap-12 reveal-up active">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-5xl gap-12">
         
         <div className="flex-1 space-y-6 text-center md:text-left">
           <div className="inline-block px-4 py-1.5 rounded-full border border-slate-700 bg-slate-800/50 text-xs font-bold tracking-widest text-accent-blue mb-2">
@@ -17,10 +17,10 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-lg text-slate-400 max-w-xl leading-relaxed font-light">
-            Undergraduate IT student with hands-on experience in cross-platform mobile development and full-stack web applications. Seeking opportunities to solve technical problems and build secure systems.
+            Full-Stack Developer & AppSec Enthusiast focused on building high-performance, secure digital infrastructures. Specializing in zero-knowledge web architectures and cross-platform mobile optimization using Flutter.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 justify-center md:justify-start">
+          <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 justify-center md:justify-start flex-wrap">
             <a 
               href="#projects" 
               className="px-6 py-3 bg-white text-slate-900 font-bold rounded-lg hover:bg-slate-200 transition-colors duration-300"
@@ -32,6 +32,14 @@ export default function HeroSection() {
               className="px-6 py-3 border border-slate-700 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition-colors duration-300"
             >
               Contact Me
+            </a>
+            <a 
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 border border-[#00FFFF] bg-[#00FFFF]/10 rounded-lg text-[#00FFFF] hover:bg-[#00FFFF]/20 hover:shadow-[0_0_15px_rgba(0,255,255,0.4)] transition-all duration-300 font-bold whitespace-nowrap"
+            >
+              Download Resume
             </a>
           </div>
         </div>

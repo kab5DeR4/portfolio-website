@@ -10,7 +10,7 @@ export default function ExperienceSection() {
       <div className="max-w-4xl mx-auto space-y-8">
         
         {/* Experience Card */}
-        <div className="glass-card hover-glass p-8 rounded-2xl reveal-up active border-l-4 border-l-accent-indigo">
+        <div className="glass-card hover-glass p-8 rounded-2xl border-l-4 border-l-accent-indigo">
           <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
             <div className="w-16 h-16 rounded-full bg-slate-800/80 flex items-center justify-center shrink-0 border border-slate-700">
               <span className="text-2xl font-bold text-accent-indigo">N</span>
@@ -28,7 +28,7 @@ export default function ExperienceSection() {
         </div>
 
         {/* Certifications Area */}
-        <div className="glass-card p-8 rounded-2xl border-t-2 border-t-accent-blue/50 reveal-up active relative overflow-hidden">
+        <div className="glass-card p-8 rounded-2xl border-t-2 border-t-accent-blue/50 relative overflow-hidden">
           
           <div className="absolute top-0 right-8 -translate-y-1/2 bg-accent-blue text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">
             Achievements

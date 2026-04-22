@@ -4,7 +4,7 @@ import React from 'react';
 export default function ContactSection() {
   return (
     <section id="contact" className="section-padding max-w-5xl mx-auto relative z-10">
-      <div className="glass-card p-6 md:p-10 text-white relative overflow-hidden reveal-up active border border-slate-800 bg-slate-900/40">
+      <div className="glass-card p-6 md:p-10 text-white relative overflow-hidden border border-slate-800 bg-slate-900/40">
 
         <div className="relative z-10 grid md:grid-cols-2 gap-12">
           <div>

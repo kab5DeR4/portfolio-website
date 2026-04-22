@@ -3,7 +3,7 @@ import React from 'react';
 export default function AboutSection() {
   return (
     <section id="about" className="relative section-padding z-10">
-      <div className="glass-card hover-glass p-8 md:p-10 max-w-4xl mx-auto text-center space-y-6 reveal-up active border-t-2 border-t-accent-blue/50">
+      <div className="glass-card hover-glass p-8 md:p-10 max-w-4xl mx-auto text-center space-y-6 border-t-2 border-t-accent-blue/50">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
           Passionate About <br className="md:hidden" />
           <span className="text-accent-blue">Web</span> & <span className="text-accent-indigo">Mobile Dev</span>

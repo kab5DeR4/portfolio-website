@@ -32,7 +32,7 @@
   }
 
   .hover-glass {
-    @apply hover:bg-slate-800/40 hover:border-slate-700 hover:-translate-y-1;
+    @apply hover:bg-slate-800/40 hover:border-slate-700 hover:-translate-y-2 hover:shadow-lg hover:shadow-accent-blue/20;
   }
 
   /* Animated gradient text */
@@ -40,11 +40,5 @@
     @apply text-transparent bg-clip-text bg-gradient-to-r from-accent-blue via-slate-200 to-accent-indigo;
   }
   
-  /* Reveal Animations */
-  .reveal-up {
-    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
-  }
-  .reveal-up.active {
-    @apply opacity-100 translate-y-0;
-  }
+
 }
