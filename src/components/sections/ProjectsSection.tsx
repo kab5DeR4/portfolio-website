@@ -32,7 +32,7 @@ export default function ProjectsSection() {
                 </div>
                 <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center z-10">
                   <h3 className="text-2xl font-bold text-white mb-4">Secure Vault</h3>
-                  <p className="text-slate-300 mb-6 font-light leading-relaxed">
+                  <p className="text-slate-100 mb-6 font-light leading-relaxed">
                     An advanced encrypted data manager designed with a zero-knowledge architecture. Implemented rigid access controls, end-to-end encryption pipelines, and comprehensive threat modeling to protect sensitive user credentials against common web vulnerabilities.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-auto mb-2">
@@ -66,7 +66,7 @@ export default function ProjectsSection() {
                 </div>
                 <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center z-10">
                   <h3 className="text-2xl font-bold text-white mb-4">Mumbai Route Finder</h3>
-                  <p className="text-slate-300 mb-6 font-light leading-relaxed">
+                  <p className="text-slate-100 mb-6 font-light leading-relaxed">
                     A high-performance urban navigation tool leveraging optimized routing algorithms. Focused on backend integration efficiency to rapidly compute optimal paths across Mumbai's complex local transit networks, drastically reducing API payload sizes and load times.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-auto mb-2">

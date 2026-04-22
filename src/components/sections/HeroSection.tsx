@@ -31,7 +31,7 @@ export default function HeroSection() {
             <span className="text-gradient">Nale.</span>
           </h1>
 
-          <p className="text-base md:text-lg lg:text-xl text-slate-300 max-w-xl leading-relaxed font-light mx-auto lg:mx-0">
+          <p className="text-base md:text-lg lg:text-xl text-slate-100 max-w-xl leading-relaxed font-light mx-auto lg:mx-0">
             Full-Stack Developer & AppSec Enthusiast focused on building high-performance, secure digital infrastructures. Specializing in zero-knowledge web architectures.
           </p>
 

@@ -28,7 +28,7 @@ export default function ExperienceSection() {
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white tracking-wide">Volunteer</h3>
                     <p className="text-[#00FFFF] font-medium mt-1 uppercase text-sm tracking-widest">NSS - Pillai College, Panvel</p>
-                    <ul className="text-slate-300 mt-4 font-light list-disc pl-5 space-y-2">
+                    <ul className="text-slate-100 mt-4 font-light list-disc pl-5 space-y-2">
                       <li>Conducted surveys to assess community needs, driving targeted initiatives.</li>
                       <li>Coordinated logistics for events, ensuring seamless execution and satisfaction.</li>
                       <li>Led community outreach programs, boosting engagement.</li>

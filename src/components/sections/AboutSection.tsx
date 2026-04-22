@@ -23,7 +23,7 @@ export default function AboutSection() {
             </div>
 
             {/* Right Side: Text Content */}
-            <div className="lg:w-2/3 space-y-6 text-slate-300 text-lg leading-relaxed font-light text-left">
+            <div className="lg:w-2/3 space-y-6 text-slate-100 text-lg leading-relaxed font-light text-left">
               <p>
                 I am a quick learner and a dedicated <strong className="text-white font-semibold">BSc Information Technology student</strong> at Pillai College of Arts, Commerce and Science (Autonomous), Panvel (2024 — 2027), currently in my 2nd Year, 4th Semester.
               </p>
