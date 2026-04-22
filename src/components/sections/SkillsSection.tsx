@@ -31,7 +31,7 @@ export default function SkillsSection() {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
           Technical <span className="text-gradient">Arsenal</span>
         </h2>
-        <p className="text-slate-400 max-w-2xl mx-auto font-light">
+        <p className="text-slate-300 max-w-2xl mx-auto font-light">
           A curated stack designed to deliver blazing fast, highly optimized web experiences engineered with uncompromising security standards.
         </p>
       </div>

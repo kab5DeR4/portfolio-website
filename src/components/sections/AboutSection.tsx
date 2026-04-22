@@ -9,7 +9,7 @@ export default function AboutSection() {
           <span className="text-accent-blue">Web</span> & <span className="text-accent-indigo">Mobile Dev</span>
         </h2>
         
-        <div className="space-y-6 text-base md:text-lg text-slate-400 leading-relaxed font-light">
+        <div className="space-y-6 text-base md:text-lg text-slate-300 leading-relaxed font-light">
           <p>
             I am a quick learner and a dedicated <strong className="text-slate-200 font-medium">BSc Information Technology student</strong> at Pillai College of Arts, Commerce and Science (Autonomous), Panvel (2024 — 2027), currently in my 2nd Year, 4th Semester.
           </p>

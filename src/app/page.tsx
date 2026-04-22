@@ -32,7 +32,7 @@ export default function Home() {
         </ScrollReveal>
       </div>
 
-      <footer className="relative z-10 glass-card bg-transparent border-t border-slate-800 py-8 mt-12 text-center text-slate-500 text-sm">
+      <footer className="relative z-10 glass-card bg-transparent border-t border-slate-800 py-8 mt-12 text-center text-slate-400 text-sm">
         <p>© {new Date().getFullYear()} Roshan Nale. All Rights Reserved.</p>
       </footer>
     </main>

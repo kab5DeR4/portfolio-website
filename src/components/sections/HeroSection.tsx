@@ -16,7 +16,7 @@ export default function HeroSection() {
             <span className="text-gradient">Nale.</span>
           </h1>
           
-          <p className="text-lg text-slate-400 max-w-xl leading-relaxed font-light">
+          <p className="text-lg text-slate-300 max-w-xl leading-relaxed font-light">
             Full-Stack Developer & AppSec Enthusiast focused on building high-performance, secure digital infrastructures. Specializing in zero-knowledge web architectures and cross-platform mobile optimization using Flutter.
           </p>
 
