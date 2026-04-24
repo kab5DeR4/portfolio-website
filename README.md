@@ -24,7 +24,8 @@ This is my personal portfolio website built to showcase my projects, skills, and
 
 ## Screenshots
 > *(Add a screenshot of your portfolio homepage here)*
-<!-- ![Portfolio Screenshot](link-to-your-image.png) -->
+<img width="1902" height="947" alt="image" src="https://github.com/user-attachments/assets/ba0b4e61-1de8-4588-8e6c-1b79d4bbe359" />
+
 
 ## How to run
 1. Clone the repo: `git clone https://github.com/kab5DeR4/portfolio-website.git`
@@ -33,5 +34,4 @@ This is my personal portfolio website built to showcase my projects, skills, and
 4. Open `http://localhost:3000` in your browser.
 
 ## Live demo link
-> *(Add your Vercel or live hosting link here)*
-[Live Demo](#)
+https://roshannale-dev.vercel.app/#projects
