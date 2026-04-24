@@ -1,15 +1,37 @@
-## Getting Started
+# Professional Cyber-Themed Portfolio
 
-First, run the development server:
+## What it does (simple English)
+This is my personal portfolio website built to showcase my projects, skills, and professional experience. It features a modern, responsive design with a "cyber glassmorphism" aesthetic to provide visitors with a premium browsing experience.
 
-npm run dev
+## Tech stack
+- **Frontend:** Next.js, React, TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- Fully responsive across mobile, tablet, and desktop
+- Advanced UI/UX with frosted glass effects and smooth micro-animations
+- Integrated "Download Resume" functionality
+- Dynamic project showcase and interactive UI elements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Challenges I faced
+- Getting the complex Framer Motion animations to trigger smoothly without impacting the website's performance.
+- Ensuring the glassmorphism design looked consistent across different browsers and mobile screens.
 
-## Deploy on Vercel
+## What I learned
+- I deepened my understanding of Next.js routing and optimization techniques.
+- I learned how to build highly reusable and dynamic React components with TypeScript strict typing.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Screenshots
+> *(Add a screenshot of your portfolio homepage here)*
+<!-- ![Portfolio Screenshot](link-to-your-image.png) -->
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## How to run
+1. Clone the repo: `git clone https://github.com/kab5DeR4/portfolio-website.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open `http://localhost:3000` in your browser.
+
+## Live demo link
+> *(Add your Vercel or live hosting link here)*
+[Live Demo](#)
