@@ -23,7 +23,6 @@ This is my personal portfolio website built to showcase my projects, skills, and
 - I learned how to build highly reusable and dynamic React components with TypeScript strict typing.
 
 ## Screenshots
-> *(Add a screenshot of your portfolio homepage here)*
 <img width="1902" height="947" alt="image" src="https://github.com/user-attachments/assets/ba0b4e61-1de8-4588-8e6c-1b79d4bbe359" />
 
 
