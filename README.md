@@ -33,4 +33,4 @@ This is my personal portfolio website built to showcase my projects, skills, and
 4. Open `http://localhost:3000` in your browser.
 
 ## Live demo link
-https://roshannale-dev.vercel.app/#projects
+https://roshannale-dev.vercel.app/
