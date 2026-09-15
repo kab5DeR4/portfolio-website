@@ -18,11 +18,11 @@ export default function OpenSourceSection() {
       
       {/* signature divider */}
       <div className="flex items-center gap-4 mb-16">
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Open Source
         </span>
         <div className="h-px bg-[#e4e4dd] w-full" />
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Public Code
         </span>
       </div>
@@ -54,7 +54,7 @@ export default function OpenSourceSection() {
                 <h3 className="text-lg font-serif font-bold text-[#121512]">github.com/{personalInfo.handle}</h3>
                 <span className="label-tag text-[10px]">Active Contributor</span>
               </div>
-              <p className="text-xs text-[#7c8279] font-mono mt-0.5">
+              <p className="text-xs text-[#525850] font-mono mt-0.5">
                 8 Public Repositories · Continuous Commit History
               </p>
             </div>
@@ -64,6 +64,7 @@ export default function OpenSourceSection() {
             href={personalInfo.socials.github}
             target="_blank"
             rel="noreferrer"
+            aria-label="View Roshan Nale's GitHub Profile"
             className="px-5 py-2.5 rounded-full bg-[#121512] text-[#fbfaf5] text-xs font-medium hover:bg-[#252a24] transition-all flex items-center gap-2 shadow-sm"
           >
             <GithubIcon size={14} />
@@ -79,7 +80,7 @@ export default function OpenSourceSection() {
               <Sparkles size={13} className="text-[#4f564d]" />
               <span>GitHub Activity</span>
             </div>
-            <span className="text-[10px] font-mono text-[#7c8279]">Real contribution history</span>
+            <span className="text-[10px] font-mono text-[#525850]">Real contribution history</span>
           </div>
 
           {/* github contribution graph via github-readme-stats */}
@@ -87,12 +88,14 @@ export default function OpenSourceSection() {
             <img
               src={`https://ghchart.rshah.org/2d4a34/${personalInfo.handle}`}
               alt={`${personalInfo.name}'s GitHub contribution chart`}
+              width={800}
+              height={120}
               className="w-full h-auto min-w-[500px]"
               loading="lazy"
             />
           </div>
 
-          <div className="flex items-center justify-between text-[11px] font-mono text-[#7c8279] mt-3">
+          <div className="flex items-center justify-between text-[11px] font-mono text-[#525850] mt-3">
             <span>Actual commit history from GitHub</span>
             <a
               href={personalInfo.socials.github}
@@ -151,6 +154,7 @@ export default function OpenSourceSection() {
               href={contrib.url}
               target="_blank"
               rel="noreferrer"
+              aria-label={`Inspect repository ${contrib.title}`}
               className="pt-3 border-t border-[#e4e4dd] text-xs font-mono text-[#4f564d] hover:text-[#121512] flex items-center justify-between transition-colors"
             >
               <span>Inspect Repository</span>
