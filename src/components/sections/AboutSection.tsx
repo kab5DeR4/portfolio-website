@@ -79,7 +79,7 @@ export default function AboutSection() {
             </span>
             <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-[10px] font-mono text-emerald-800">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
-              Lead Developer
+              Active Development
             </span>
           </div>
 
@@ -88,7 +88,7 @@ export default function AboutSection() {
           </h3>
 
           <p className="text-xs sm:text-sm text-[#4f564d] font-light leading-relaxed mb-6">
-            Pioneering a continuous Governance, Risk, and Compliance platform designed to replace subjective questionnaires with automated code-level verification against SOC 2 and ISO 27001.
+            Building a continuous compliance platform that replaces manual audit questionnaires with code-level verification against SOC 2 and ISO 27001. Solo project, active development.
           </p>
 
           <div className="p-4 rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] space-y-2 text-xs font-mono text-[#4f564d] mb-6">
@@ -127,7 +127,7 @@ export default function AboutSection() {
       >
         <div className="text-[11px] font-mono uppercase tracking-widest text-[#7c8279] mb-5 flex items-center gap-2">
           <Sparkles size={13} className="text-amber-700" />
-          <span>Engineering Mindset & Observations</span>
+          <span>What drives the projects</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
