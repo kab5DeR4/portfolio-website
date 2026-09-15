@@ -248,7 +248,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
             <div className="rounded-xl bg-[#121512] border border-[#232722] overflow-hidden">
               <div className="px-4 py-2 bg-black/40 border-b border-white/10 flex items-center justify-between text-[11px] font-mono text-[#9b9e97]">
                 <span>{project.codeSnippet.language}</span>
-                <span>Production Tested</span>
+                <span>{project.codeSnippet.filename}</span>
               </div>
               <pre className="p-5 font-mono text-xs sm:text-sm text-neutral-200 overflow-x-auto leading-relaxed">
                 <code>{project.codeSnippet.code}</code>
@@ -279,7 +279,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
           <section className="editorial-card p-6 sm:p-9 mb-10">
             <h2 className="text-2xl font-serif font-bold text-[#121512] mb-6 flex items-center gap-2">
               <CheckCircle2 size={20} className="text-[#2d4a34]" />
-              Measurable Outcomes & Benchmark Results
+              Key Outcomes & Implementation Notes
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               {project.results.map((res, idx) => (
