@@ -70,11 +70,12 @@ export default function SkillsSection() {
             <div>
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-lg font-serif font-bold text-[#121512] flex items-center gap-2">
-                  {category.title === "Languages" && <Code2 size={16} className="text-[#4f564d]" />}
+                  {category.title === "Core Languages" && <Code2 size={16} className="text-[#4f564d]" />}
                   {category.title === "Frontend" && <Layers size={16} className="text-[#4f564d]" />}
                   {category.title === "Backend & APIs" && <Server size={16} className="text-[#4f564d]" />}
                   {category.title === "Databases & Storage" && <Database size={16} className="text-[#4f564d]" />}
-                  {category.title === "DevOps, Security & Tooling" && <ShieldCheck size={16} className="text-[#4f564d]" />}
+                  {category.title === "Security & GRC" && <ShieldCheck size={16} className="text-[#4f564d]" />}
+                  {category.title === "Tooling & DevOps" && <Server size={16} className="text-[#4f564d]" />}
                   {category.title}
                 </h3>
                 <span className="text-[10px] font-mono text-[#7c8279]">
@@ -112,8 +113,8 @@ export default function SkillsSection() {
             </div>
 
             <div className="mt-6 pt-4 border-t border-[#e4e4dd] flex items-center justify-between text-[10px] font-mono text-[#7c8279]">
-              <span>Production Tested</span>
-              <span>● Ready</span>
+              <span>Used in projects</span>
+              <span>{category.skills.length} tools</span>
             </div>
           </motion.div>
         ))}
