@@ -30,29 +30,29 @@ function EditorialMockup({ project }: { project: ProjectCaseStudy }) {
         </div>
 
         <div className="my-auto py-4">
-          <div className="text-xs font-mono text-[#9b9e97] mb-1.5">Zero-Knowledge Evidence Engine</div>
+          <div className="text-xs font-mono text-[#9b9e97] mb-1.5">Local Compliance Evidence Engine</div>
           <div className="text-xl sm:text-2xl font-serif font-bold tracking-tight text-white mb-3">
             SHA-256 Codebase Verification Pipeline
           </div>
           <div className="grid grid-cols-3 gap-2 text-center text-xs font-mono">
             <div className="p-2 rounded bg-white/[0.04] border border-white/5">
-              <div className="text-emerald-400 font-bold">100%</div>
-              <div className="text-[10px] text-[#9b9e97]">Deterministic</div>
+              <div className="text-emerald-400 font-bold">SHA-256</div>
+              <div className="text-[10px] text-[#9b9e97]">Evidence Hash</div>
             </div>
             <div className="p-2 rounded bg-white/[0.04] border border-white/5">
-              <div className="text-white font-bold">&lt; 250ms</div>
-              <div className="text-[10px] text-[#9b9e97]">Check Latency</div>
+              <div className="text-white font-bold">Target</div>
+              <div className="text-[10px] text-[#9b9e97]">&lt; 250ms Check</div>
             </div>
             <div className="p-2 rounded bg-white/[0.04] border border-white/5">
-              <div className="text-emerald-400 font-bold">98.4%</div>
-              <div className="text-[10px] text-[#9b9e97]">Posture Score</div>
+              <div className="text-emerald-400 font-bold">3+</div>
+              <div className="text-[10px] text-[#9b9e97]">Frameworks</div>
             </div>
           </div>
         </div>
 
         <div className="flex items-center justify-between text-[11px] font-mono text-[#9b9e97] pt-2 border-t border-white/10">
           <span>FastAPI + React 19</span>
-          <span>Zero Server Storage</span>
+          <span>Local Evaluation</span>
         </div>
       </div>
     );
@@ -166,15 +166,19 @@ export default function ProjectsSection() {
     <section id="projects" className="py-16 md:py-24 px-4 sm:px-6 md:px-12 max-w-6xl mx-auto w-full">
       
       {/* signature jose ocando divider */}
-      <div className="flex items-center gap-4 mb-16">
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+      <div className="flex items-center gap-4 mb-12">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Featured Work
         </span>
         <div className="h-px bg-[#e4e4dd] w-full" />
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Curated Systems
         </span>
       </div>
+
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-black tracking-tight text-[#121512] mb-14">
+        Featured systems & projects.
+      </h2>
 
       {/* alternating feature blocks */}
       <div className="space-y-16 sm:space-y-24 mb-24">
@@ -211,7 +215,7 @@ export default function ProjectsSection() {
 
                   {/* quote from the case study */}
                   <div className="mb-6 pl-4 border-l-2 border-[#121512]">
-                    <div className="text-[10px] font-mono uppercase tracking-widest text-[#7c8279] mb-1">
+                    <div className="text-[10px] font-mono uppercase tracking-widest text-[#525850] mb-1">
                       From the case study
                     </div>
                     <p className="text-sm sm:text-base text-[#4f564d] italic leading-relaxed">
@@ -237,6 +241,7 @@ export default function ProjectsSection() {
                 <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-[#e4e4dd]">
                   <Link
                     href={`/case-study/${project.slug}`}
+                    aria-label={`Read case study for ${project.title}`}
                     className="px-5 py-2.5 rounded-full bg-[#121512] text-[#fbfaf5] text-xs font-medium hover:bg-[#252a24] transition-all flex items-center gap-2 group shadow-sm"
                   >
                     <span>Read Case Study</span>
@@ -247,6 +252,7 @@ export default function ProjectsSection() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label={`View source code for ${project.title} on GitHub`}
                     className="px-4 py-2.5 rounded-full bg-[#ffffff] hover:bg-[#f6f5ef] border border-[#e4e4dd] text-xs font-mono text-[#121512] flex items-center gap-1.5 transition-colors"
                   >
                     <GithubIcon size={14} /> Source Code
@@ -257,6 +263,7 @@ export default function ProjectsSection() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noreferrer"
+                      aria-label={`Launch live demo for ${project.title}`}
                       className="px-4 py-2.5 rounded-full bg-[#f0efe8] hover:bg-[#e6e5de] border border-[#e2e1d9] text-xs font-mono text-[#121512] flex items-center gap-1.5 transition-colors"
                     >
                       <ExternalLink size={13} /> Live Demo
@@ -277,15 +284,19 @@ export default function ProjectsSection() {
       </div>
 
       {/* second divider: full index */}
-      <div className="flex items-center gap-4 mb-12">
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+      <div className="flex items-center gap-4 mb-8">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           All Work <sup>({projectsData.length})</sup>
         </span>
         <div className="h-px bg-[#e4e4dd] w-full" />
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Categorical Index
         </span>
       </div>
+
+      <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#121512] mb-6">
+        Complete project archive.
+      </h3>
 
       {/* category filter pills */}
       <div className="flex flex-wrap gap-2 mb-10 justify-center md:justify-start">
@@ -318,14 +329,14 @@ export default function ProjectsSection() {
             <div>
               <div className="flex items-start justify-between gap-3 mb-3">
                 <span className="label-tag">{project.category}</span>
-                <span className="text-[11px] font-mono text-[#7c8279]">{project.duration}</span>
+                <span className="text-[11px] font-mono text-[#525850]">{project.duration}</span>
               </div>
 
               <h4 className="text-2xl font-serif font-bold text-[#121512] mb-2 group-hover:text-[#4f564d] transition-colors">
                 {project.title}
               </h4>
 
-              <p className="text-xs text-[#7c8279] font-mono mb-3">
+              <p className="text-xs text-[#525850] font-mono mb-3">
                 {project.tagline}
               </p>
 
@@ -348,6 +359,7 @@ export default function ProjectsSection() {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label={`View code for ${project.title} on GitHub`}
                   className="text-xs font-mono text-[#4f564d] hover:text-[#121512] flex items-center gap-1 transition-colors"
                 >
                   <GithubIcon size={14} /> Code
@@ -357,6 +369,7 @@ export default function ProjectsSection() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label={`View live demo for ${project.title}`}
                     className="text-xs font-mono text-[#4f564d] hover:text-[#121512] flex items-center gap-1 transition-colors"
                   >
                     <ExternalLink size={12} /> Live
@@ -366,6 +379,7 @@ export default function ProjectsSection() {
 
               <Link
                 href={`/case-study/${project.slug}`}
+                aria-label={`Read case study for ${project.title}`}
                 className="text-xs font-semibold text-[#121512] flex items-center gap-1 hover:translate-x-0.5 transition-transform"
               >
                 <span>Read Case Study</span>
