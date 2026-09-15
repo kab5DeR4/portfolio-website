@@ -121,6 +121,8 @@ export default function HeroSection() {
                   src="/profile.png"
                   alt="Roshan Nale"
                   fill
+                  sizes="56px"
+                  priority
                   className="object-cover"
                 />
               </div>
@@ -217,7 +219,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="editorial-card p-6 sm:p-7"
           >
-            <div className="text-[11px] font-mono uppercase tracking-widest text-[#7c8279] mb-5">
+            <div className="text-[11px] font-mono uppercase tracking-widest text-[#525850] mb-5">
               Where you can start
             </div>
 
@@ -233,9 +235,9 @@ export default function HeroSection() {
                   <div className="min-w-0 flex-1">
                     <div className="text-xs font-semibold text-[#121512] group-hover:text-[#000b00] flex items-center justify-between">
                       <span>Read GRC Engine case study</span>
-                      <ArrowRight size={13} className="text-[#9b9e97] group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight size={13} className="text-[#525850] group-hover:translate-x-1 transition-transform" />
                     </div>
-                    <div className="text-[11px] text-[#7c8279] truncate">Continuous policy & compliance mapping</div>
+                    <div className="text-[11px] text-[#525850] truncate">Continuous policy & compliance mapping</div>
                   </div>
                 </Link>
               </li>
@@ -251,9 +253,9 @@ export default function HeroSection() {
                   <div className="min-w-0 flex-1">
                     <div className="text-xs font-semibold text-[#121512] group-hover:text-[#000b00] flex items-center justify-between">
                       <span>Explore Bhumi Finance</span>
-                      <ArrowRight size={13} className="text-[#9b9e97] group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight size={13} className="text-[#525850] group-hover:translate-x-1 transition-transform" />
                     </div>
-                    <div className="text-[11px] text-[#7c8279] truncate">Offline-first SQLite ledger for daily loans</div>
+                    <div className="text-[11px] text-[#525850] truncate">Offline-first SQLite ledger for daily loans</div>
                   </div>
                 </Link>
               </li>
@@ -269,9 +271,9 @@ export default function HeroSection() {
                   <div className="min-w-0 flex-1">
                     <div className="text-xs font-semibold text-[#121512] group-hover:text-[#000b00] flex items-center justify-between">
                       <span>Inspect 60 FPS mortality telemetry</span>
-                      <ArrowRight size={13} className="text-[#9b9e97] group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight size={13} className="text-[#525850] group-hover:translate-x-1 transition-transform" />
                     </div>
-                    <div className="text-[11px] text-[#7c8279] truncate">Astronomical tropical year calculation</div>
+                    <div className="text-[11px] text-[#525850] truncate">Astronomical tropical year calculation</div>
                   </div>
                 </Link>
               </li>
@@ -287,9 +289,9 @@ export default function HeroSection() {
                   <div className="min-w-0 flex-1">
                     <div className="text-xs font-semibold text-[#121512] group-hover:text-[#000b00] flex items-center justify-between">
                       <span>Browse technical skill repertoire</span>
-                      <ArrowRight size={13} className="text-[#9b9e97] group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight size={13} className="text-[#525850] group-hover:translate-x-1 transition-transform" />
                     </div>
-                    <div className="text-[11px] text-[#7c8279] truncate">Languages, frameworks, APIs, databases</div>
+                    <div className="text-[11px] text-[#525850] truncate">Languages, frameworks, APIs, databases</div>
                   </div>
                 </a>
               </li>
@@ -305,9 +307,9 @@ export default function HeroSection() {
                   <div className="min-w-0 flex-1">
                     <div className="text-xs font-semibold text-[#121512] group-hover:text-[#000b00] flex items-center justify-between">
                       <span>Read recent engineering essays</span>
-                      <ArrowRight size={13} className="text-[#9b9e97] group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight size={13} className="text-[#525850] group-hover:translate-x-1 transition-transform" />
                     </div>
-                    <div className="text-[11px] text-[#7c8279] truncate">Continuous GRC & offline architectures</div>
+                    <div className="text-[11px] text-[#525850] truncate">Continuous GRC & offline architectures</div>
                   </div>
                 </a>
               </li>
@@ -327,18 +329,18 @@ export default function HeroSection() {
                 <span className="w-2.5 h-2.5 rounded-full bg-[#d5d6d0]" />
                 <span className="w-2.5 h-2.5 rounded-full bg-[#d5d6d0]" />
                 <span className="w-2.5 h-2.5 rounded-full bg-[#d5d6d0]" />
-                <span className="ml-2 text-[10px] font-mono text-[#7c8279]">roshan@sys-arch</span>
+                <span className="ml-2 text-[10px] font-mono text-[#525850]">roshan@sys-arch</span>
               </div>
               <div className="flex items-center gap-1 text-[10px] font-mono">
                 <button
                   onClick={() => setActiveTab("grc")}
-                  className={`px-2 py-0.5 rounded ${activeTab === "grc" ? "bg-[#ffffff] text-[#121512] font-semibold shadow-xs" : "text-[#7c8279]"}`}
+                  className={`px-2 py-0.5 rounded ${activeTab === "grc" ? "bg-[#ffffff] text-[#121512] font-semibold shadow-xs" : "text-[#525850]"}`}
                 >
                   grc.py
                 </button>
                 <button
                   onClick={() => setActiveTab("telemetry")}
-                  className={`px-2 py-0.5 rounded ${activeTab === "telemetry" ? "bg-[#ffffff] text-[#121512] font-semibold shadow-xs" : "text-[#7c8279]"}`}
+                  className={`px-2 py-0.5 rounded ${activeTab === "telemetry" ? "bg-[#ffffff] text-[#121512] font-semibold shadow-xs" : "text-[#525850]"}`}
                 >
                   time.js
                 </button>
@@ -369,7 +371,7 @@ export default function HeroSection() {
               )}
             </div>
 
-            <div className="px-4 py-1.5 bg-[#fbfaf5] border-t border-[#e4e4dd] flex items-center justify-between text-[10px] font-mono text-[#7c8279]">
+            <div className="px-4 py-1.5 bg-[#fbfaf5] border-t border-[#e4e4dd] flex items-center justify-between text-[10px] font-mono text-[#525850]">
               <span>Local Evaluation · No Code Upload</span>
               <span>Next.js 16 SSG</span>
             </div>
