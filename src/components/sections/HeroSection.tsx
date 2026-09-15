@@ -72,7 +72,7 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f0efe8] border border-[#e2e1d9] text-[11px] font-mono text-[#4f564d] mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
-              <span>Available for engineering roles & consulting</span>
+              <span>Open to internships, graduate roles & engineering opportunities</span>
             </motion.div>
 
             {/* main serif title */}
@@ -99,14 +99,14 @@ export default function HeroSection() {
               </span>
             </motion.div>
 
-            {/* core statement */}
+            {/* core statement — plain, honest, fast to read */}
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg sm:text-xl text-[#3d403c] font-light leading-relaxed mb-8 max-w-xl"
             >
-              I engineer high-performance software systems at the intersection of continuous security governance, distributed web architectures, and resilient developer tools.
+              I build practical software across full-stack development, backend engineering, security, and automation. Currently working on GRC Engine — a continuous compliance platform.
             </motion.p>
 
             {/* profile row */}
@@ -370,7 +370,7 @@ export default function HeroSection() {
             </div>
 
             <div className="px-4 py-1.5 bg-[#fbfaf5] border-t border-[#e4e4dd] flex items-center justify-between text-[10px] font-mono text-[#7c8279]">
-              <span>Zero-Knowledge Pipeline</span>
+              <span>Local Evaluation · No Code Upload</span>
               <span>Next.js 16 SSG</span>
             </div>
           </motion.div>
