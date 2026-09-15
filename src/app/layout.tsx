@@ -19,20 +19,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${personalInfo.name} — Full-Stack Developer & Security Systems Builder`,
-  description: `${personalInfo.name} (@${personalInfo.handle}) is a BSc IT student & full-stack developer architecting continuous compliance engines, distributed web systems, and high-performance apps.`,
+  title: `${personalInfo.name} — Full-Stack Developer & Security-Focused Engineer`,
+  description: `Portfolio of Roshan Nale, a BSc IT student building full-stack software, security-focused systems, compliance automation tools, and AI/ML projects. Open to internships and graduate roles.`,
   keywords: [
     "Roshan Nale",
     "kab5DeR4",
     "Developer Portfolio",
     "Full-Stack Developer",
-    "Claude Code Portfolio",
     "GRC Engine",
     "Continuous Compliance",
-    "FastAPI",
+    "FastAPI Developer",
     "Next.js Developer",
     "Application Security",
-    "Pillai College"
+    "BSc IT Student",
+    "Pillai College",
+    "Security Engineering"
   ],
   authors: [{ name: personalInfo.name, url: personalInfo.socials.portfolio }],
   creator: personalInfo.name,
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: personalInfo.socials.portfolio,
-    title: `${personalInfo.name} — Full-Stack Developer & Security Systems`,
+    title: `${personalInfo.name} — Full-Stack Developer & Security-Focused Engineer`,
     description: personalInfo.bio,
     siteName: `${personalInfo.name} Portfolio`,
   },
