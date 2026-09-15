@@ -21,11 +21,11 @@ export default function SkillsSection() {
       
       {/* signature divider */}
       <div className="flex items-center gap-4 mb-16">
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Repertoire
         </span>
         <div className="h-px bg-[#e4e4dd] w-full" />
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Technical Stack
         </span>
       </div>
@@ -78,12 +78,12 @@ export default function SkillsSection() {
                   {category.title === "Tooling & DevOps" && <Server size={16} className="text-[#4f564d]" />}
                   {category.title}
                 </h3>
-                <span className="text-[10px] font-mono text-[#7c8279]">
+                <span className="text-[10px] font-mono text-[#525850]">
                   {category.skills.length} tools
                 </span>
               </div>
 
-              <p className="text-xs text-[#7c8279] mb-5 leading-relaxed font-light">
+              <p className="text-xs text-[#525850] mb-5 leading-relaxed font-light">
                 {category.description}
               </p>
 
@@ -102,7 +102,7 @@ export default function SkillsSection() {
                         {skill.name}
                       </span>
                       {skill.badge && (
-                        <span className="text-[9px] font-mono text-[#7c8279] truncate">
+                        <span className="text-[9px] font-mono text-[#525850] truncate">
                           {skill.badge}
                         </span>
                       )}
@@ -112,7 +112,7 @@ export default function SkillsSection() {
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[#e4e4dd] flex items-center justify-between text-[10px] font-mono text-[#7c8279]">
+            <div className="mt-6 pt-4 border-t border-[#e4e4dd] flex items-center justify-between text-[10px] font-mono text-[#525850]">
               <span>Used in projects</span>
               <span>{category.skills.length} tools</span>
             </div>

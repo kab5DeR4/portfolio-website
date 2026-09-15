@@ -69,7 +69,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
           {/* back to projects navigation */}
           <Link
             href="/#projects"
-            className="inline-flex items-center gap-2 text-xs font-mono text-[#7c8279] hover:text-[#121512] mb-10 transition-colors group"
+            className="inline-flex items-center gap-2 text-xs font-mono text-[#525850] hover:text-[#121512] mb-10 transition-colors group"
           >
             <ArrowLeft size={13} className="group-hover:-translate-x-1 transition-transform" />
             <span>Back to All Projects</span>
@@ -79,7 +79,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
           <div className="mb-14">
             <div className="flex flex-wrap items-center gap-2 mb-4">
               <span className="label-tag">{project.category}</span>
-              <span className="text-xs font-mono text-[#7c8279]">{project.duration}</span>
+              <span className="text-xs font-mono text-[#525850]">{project.duration}</span>
               {project.stars !== undefined && project.stars > 0 && (
                 <span className="flex items-center gap-1 text-xs font-mono text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded border border-amber-200">
                   <Star size={11} className="fill-amber-600" />
@@ -99,19 +99,19 @@ export default async function CaseStudyPage({ params }: PageProps) {
             {/* quick meta grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-5 rounded-2xl bg-[#ffffff] border border-[#e4e4dd] mb-8 shadow-xs">
               <div>
-                <span className="text-[10px] font-mono text-[#7c8279] uppercase block mb-1">Role</span>
+                <span className="text-[10px] font-mono text-[#525850] uppercase block mb-1">Role</span>
                 <span className="text-xs sm:text-sm font-semibold text-[#121512]">{project.role}</span>
               </div>
               <div>
-                <span className="text-[10px] font-mono text-[#7c8279] uppercase block mb-1">Context</span>
+                <span className="text-[10px] font-mono text-[#525850] uppercase block mb-1">Context</span>
                 <span className="text-xs sm:text-sm font-semibold text-[#121512]">{project.clientContext}</span>
               </div>
               <div>
-                <span className="text-[10px] font-mono text-[#7c8279] uppercase block mb-1">Timeline</span>
+                <span className="text-[10px] font-mono text-[#525850] uppercase block mb-1">Timeline</span>
                 <span className="text-xs sm:text-sm font-semibold text-[#121512]">{project.duration}</span>
               </div>
               <div>
-                <span className="text-[10px] font-mono text-[#7c8279] uppercase block mb-1">Repository</span>
+                <span className="text-[10px] font-mono text-[#525850] uppercase block mb-1">Repository</span>
                 <span className="text-xs sm:text-sm font-semibold text-[#2d4a34]">Public Open Source</span>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
             </p>
 
             <div className="space-y-3">
-              <h3 className="text-xs font-mono text-[#7c8279] uppercase tracking-wider">
+              <h3 className="text-xs font-mono text-[#525850] uppercase tracking-wider">
                 Key Operational Bottlenecks
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -186,7 +186,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                   className="p-5 rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] flex flex-col justify-between"
                 >
                   <div>
-                    <span className="text-[10px] font-mono text-[#7c8279] block mb-1">
+                    <span className="text-[10px] font-mono text-[#525850] block mb-1">
                       Constraint 0{i + 1}
                     </span>
                     <h3 className="text-sm font-bold text-[#121512] mb-2">{c.title}</h3>
@@ -216,7 +216,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
             {/* sequential data pipeline steps */}
             <div className="space-y-2.5">
-              <h3 className="text-xs font-mono text-[#7c8279] uppercase tracking-wider mb-2">
+              <h3 className="text-xs font-mono text-[#525850] uppercase tracking-wider mb-2">
                 Sequential Pipeline Execution
               </h3>
               {project.architecture.flow.map((step, idx) => (
@@ -240,7 +240,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 <FileCode2 size={20} className="text-[#4f564d]" />
                 Key Implementation Detail
               </h2>
-              <span className="text-xs font-mono text-[#7c8279]">
+              <span className="text-xs font-mono text-[#525850]">
                 {project.codeSnippet.filename}
               </span>
             </div>
@@ -293,14 +293,14 @@ export default async function CaseStudyPage({ params }: PageProps) {
                   <div className="text-xs font-mono font-bold text-[#4f564d] uppercase tracking-wider mb-1">
                     {res.label}
                   </div>
-                  <div className="text-[11px] text-[#7c8279]">{res.detail}</div>
+                  <div className="text-[11px] text-[#525850]">{res.detail}</div>
                 </div>
               ))}
             </div>
 
             {/* retrospective lessons */}
             <div className="pt-6 border-t border-[#e4e4dd]">
-              <h3 className="text-xs font-mono text-[#7c8279] uppercase tracking-wider mb-4">
+              <h3 className="text-xs font-mono text-[#525850] uppercase tracking-wider mb-4">
                 Engineering Lessons & Retrospective
               </h3>
               <div className="space-y-3">

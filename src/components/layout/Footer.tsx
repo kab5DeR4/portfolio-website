@@ -102,7 +102,7 @@ export default function Footer() {
         </div>
 
         {/* bottom copyright & back to top */}
-        <div className="border-t border-[#e4e4dd] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#7c8279]">
+        <div className="border-t border-[#e4e4dd] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#525850]">
           <div>
             © {new Date().getFullYear()} {personalInfo.name} (@{personalInfo.handle}).
           </div>

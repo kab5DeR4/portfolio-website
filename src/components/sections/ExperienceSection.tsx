@@ -11,11 +11,11 @@ export default function ExperienceSection() {
       
       {/* signature divider */}
       <div className="flex items-center gap-4 mb-16">
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Track Record
         </span>
         <div className="h-px bg-[#e4e4dd] w-full" />
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Work History & Milestones
         </span>
       </div>
@@ -55,7 +55,7 @@ export default function ExperienceSection() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 text-xs font-mono text-[#7c8279] flex-shrink-0">
+                <div className="flex items-center gap-3 text-xs font-mono text-[#525850] flex-shrink-0">
                   <span className="flex items-center gap-1">
                     <Calendar size={12} />
                     {item.period}
