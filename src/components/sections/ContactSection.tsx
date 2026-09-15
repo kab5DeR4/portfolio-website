@@ -37,11 +37,11 @@ export default function ContactSection() {
       
       {/* signature divider */}
       <div className="flex items-center gap-4 mb-16">
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Contact
         </span>
         <div className="h-px bg-[#e4e4dd] w-full" />
-        <span className="text-[11px] font-mono tracking-widest uppercase text-[#7c8279] flex-shrink-0">
+        <span className="text-[11px] font-mono tracking-widest uppercase text-[#525850] flex-shrink-0">
           Start a Conversation
         </span>
       </div>
@@ -66,7 +66,7 @@ export default function ContactSection() {
 
             {/* email copy box */}
             <div className="p-4 rounded-xl bg-[#ffffff] border border-[#e4e4dd] mb-6 shadow-xs">
-              <span className="text-[10px] font-mono uppercase tracking-widest text-[#7c8279] block mb-1">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-[#525850] block mb-1">
                 Direct Email
               </span>
               <div className="flex items-center justify-between gap-2">
@@ -93,7 +93,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <div className="space-y-2 text-xs text-[#7c8279] font-mono mb-8">
+            <div className="space-y-2 text-xs text-[#525850] font-mono mb-8">
               <div className="flex items-center gap-2">
                 <Clock size={13} />
                 <span>{contactInfo.responseTime}</span>
@@ -107,7 +107,7 @@ export default function ContactSection() {
 
           {/* social channels */}
           <div className="pt-6 border-t border-[#e4e4dd]">
-            <span className="text-[10px] font-mono uppercase tracking-widest text-[#7c8279] block mb-3">
+            <span className="text-[10px] font-mono uppercase tracking-widest text-[#525850] block mb-3">
               Social Channels
             </span>
             <div className="flex items-center gap-3">
@@ -170,39 +170,45 @@ export default function ContactSection() {
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-mono text-[#4f564d] mb-1.5">
+                  <label htmlFor="contact-name" className="block text-xs font-mono text-[#4f564d] mb-1.5">
                     Your Name *
                   </label>
                   <input
+                    id="contact-name"
+                    name="name"
                     type="text"
                     required
                     placeholder="Alex Morgan"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] text-[#121512] placeholder-[#9b9e97] text-sm focus:outline-none focus:border-[#121512] transition-all"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] text-[#121512] placeholder-[#525850]/70 text-sm focus:outline-none focus:border-[#121512] transition-all"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono text-[#4f564d] mb-1.5">
+                  <label htmlFor="contact-email" className="block text-xs font-mono text-[#4f564d] mb-1.5">
                     Email Address *
                   </label>
                   <input
+                    id="contact-email"
+                    name="email"
                     type="email"
                     required
                     placeholder="alex@company.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] text-[#121512] placeholder-[#9b9e97] text-sm focus:outline-none focus:border-[#121512] transition-all"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] text-[#121512] placeholder-[#525850]/70 text-sm focus:outline-none focus:border-[#121512] transition-all"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-mono text-[#4f564d] mb-1.5">
+                <label htmlFor="contact-inquiry-type" className="block text-xs font-mono text-[#4f564d] mb-1.5">
                   Inquiry Nature
                 </label>
                 <select
+                  id="contact-inquiry-type"
+                  name="inquiryType"
                   value={formData.inquiryType}
                   onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })}
                   className="w-full px-4 py-2.5 rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] text-[#121512] text-sm focus:outline-none focus:border-[#121512] transition-all cursor-pointer"
@@ -216,16 +222,18 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-xs font-mono text-[#4f564d] mb-1.5">
+                <label htmlFor="contact-message" className="block text-xs font-mono text-[#4f564d] mb-1.5">
                   Message / Project Specs *
                 </label>
                 <textarea
+                  id="contact-message"
+                  name="message"
                   required
                   rows={4}
                   placeholder="Describe your roadmap, engineering role, or technical problem..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] text-[#121512] placeholder-[#9b9e97] text-sm focus:outline-none focus:border-[#121512] transition-all resize-none"
+                  className="w-full px-4 py-2.5 rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] text-[#121512] placeholder-[#525850]/70 text-sm focus:outline-none focus:border-[#121512] transition-all resize-none"
                 />
               </div>
 
@@ -237,7 +245,7 @@ export default function ContactSection() {
                 <span>Send Inquiry Message</span>
               </button>
 
-              <p className="text-[10px] font-mono text-[#7c8279] text-center">
+              <p className="text-[10px] font-mono text-[#525850] text-center">
                 Direct communication · Prepared in your default mail handler
               </p>
             </form>
