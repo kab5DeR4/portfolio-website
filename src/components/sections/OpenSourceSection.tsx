@@ -1,43 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import {
   ExternalLink,
   Star,
-  GitCommit,
   Sparkles,
   ArrowUpRight
 } from "lucide-react";
 import { GithubIcon } from "@/components/ui/Icons";
 import { openSourceContributions, personalInfo } from "@/data/portfolioData";
 
-// open source section styled with jose ocando clean aesthetic
+// open source section — real github activity, not simulated
 export default function OpenSourceSection() {
-  const [selectedCell, setSelectedCell] = useState<{ week: number; day: number; count: number } | null>(null);
-
-  const weeks = 40;
-  const days = 7;
-
-  const getCommitCount = (w: number, d: number) => {
-    const seed = (w * 7 + d * 13) % 19;
-    if (seed > 14) return 3;
-    if (seed > 10) return 2;
-    if (seed > 6) return 1;
-    return 0;
-  };
-
-  const getCellColor = (count: number) => {
-    switch (count) {
-      case 3:
-        return "bg-[#2d4a34]";
-      case 2:
-        return "bg-[#557a5e]";
-      case 1:
-        return "bg-[#a3bfa9]";
-      default:
-        return "bg-[#eeede6]";
-    }
-  };
 
   return (
     <section id="open-source" className="py-16 md:py-24 px-4 sm:px-6 md:px-12 max-w-6xl mx-auto w-full">
@@ -98,49 +72,36 @@ export default function OpenSourceSection() {
           </a>
         </div>
 
-        {/* contribution graph embed */}
+        {/* real github activity */}
         <div className="pt-6">
           <div className="flex items-center justify-between mb-4">
             <div className="text-xs font-mono text-[#4f564d] flex items-center gap-2">
               <Sparkles size={13} className="text-[#4f564d]" />
-              <span>Activity & Commit Cadence (Simulated Heatmap)</span>
+              <span>GitHub Activity</span>
             </div>
-            <div className="flex items-center gap-1.5 text-[10px] font-mono text-[#7c8279]">
-              <span>Less</span>
-              <span className="w-2.5 h-2.5 rounded-sm bg-[#eeede6]" />
-              <span className="w-2.5 h-2.5 rounded-sm bg-[#a3bfa9]" />
-              <span className="w-2.5 h-2.5 rounded-sm bg-[#557a5e]" />
-              <span className="w-2.5 h-2.5 rounded-sm bg-[#2d4a34]" />
-              <span>More</span>
-            </div>
+            <span className="text-[10px] font-mono text-[#7c8279]">Real contribution history</span>
           </div>
 
-          {/* scrollable heatmap */}
-          <div className="overflow-x-auto pb-2">
-            <div className="inline-flex gap-1 p-3 rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] min-w-full justify-between">
-              {Array.from({ length: weeks }).map((_, w) => (
-                <div key={w} className="flex flex-col gap-1">
-                  {Array.from({ length: days }).map((_, d) => {
-                    const count = getCommitCount(w, d);
-                    return (
-                      <div
-                        key={d}
-                        onMouseEnter={() => setSelectedCell({ week: w, day: d, count })}
-                        className={`w-3 h-3 rounded-[3px] transition-transform hover:scale-125 cursor-pointer ${getCellColor(
-                          count
-                        )}`}
-                        title={`Week ${w + 1}, Day ${d + 1}: ${count} commits`}
-                      />
-                    );
-                  })}
-                </div>
-              ))}
-            </div>
+          {/* github contribution graph via github-readme-stats */}
+          <div className="rounded-xl bg-[#f6f5ef] border border-[#e4e4dd] p-4 overflow-x-auto">
+            <img
+              src={`https://ghchart.rshah.org/2d4a34/${personalInfo.handle}`}
+              alt={`${personalInfo.name}'s GitHub contribution chart`}
+              className="w-full h-auto min-w-[500px]"
+              loading="lazy"
+            />
           </div>
 
           <div className="flex items-center justify-between text-[11px] font-mono text-[#7c8279] mt-3">
-            <span>Learn in Public · Ship Deterministic Code</span>
-            <span>{selectedCell ? `${selectedCell.count} commits on selected day` : "Hover grid to inspect activity"}</span>
+            <span>Actual commit history from GitHub</span>
+            <a
+              href={personalInfo.socials.github}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#121512] transition-colors underline underline-offset-2"
+            >
+              github.com/{personalInfo.handle}
+            </a>
           </div>
         </div>
       </motion.div>
